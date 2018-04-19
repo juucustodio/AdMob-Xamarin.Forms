@@ -4,8 +4,10 @@
              xmlns:local="clr-namespace:DemoAdMob"
              x:Class="DemoAdMob.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
 
+        <local:AdMobView x:Name="adMobView" 
+                         VerticalOptions="EndAndExpand"/>
+
+    </StackLayout>
 </ContentPage>

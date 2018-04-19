@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
 using UIKit;
 
@@ -22,6 +19,8 @@ namespace DemoAdMob.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Google.MobileAds.MobileAds.Configure("SEU ID iOS");
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

@@ -2,6 +2,7 @@
 
 using Android.App;
 using Android.Content.PM;
+using Android.Gms.Ads;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -18,6 +19,8 @@ namespace DemoAdMob.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+            MobileAds.Initialize(ApplicationContext, "SEU ID ANDROID");
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
